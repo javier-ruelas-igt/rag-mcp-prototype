@@ -13,6 +13,9 @@ type Cache = Record<string, Document>;
  * Manages document loading and change detection for RAG pipeline.
  * Handles file watching, hash-based caching, and determining which
  * documents need reprocessing.
+ *
+ * The whole caching mechanism is just a simple way to persist data.
+ * The mechanism should be replaced with a persisted Vector DB later.
  */
 export class DocumentLoader {
 	#docsDir: string;
@@ -37,4 +40,9 @@ export class DocumentLoader {
 	 * Processes a document and handles the cache.
 	 */
 	#processDocument(doc: Document) {}
+
+	/**
+	 * @link https://stackoverflow.com/questions/1761607/what-is-the-fastest-hash-algorithm-to-check-if-two-files-are-equal
+	 */
+	#getDocumentHash(doc: Document) {}
 }
