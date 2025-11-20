@@ -1,0 +1,39 @@
+{
+  "name": "rag-mcp-prototype",
+  "version": "1.0.0",
+  "description": "Retrieval-Augmented Generation (RAG) prototype built using Node, Transformers.js and an in-memory vector store. Exposed through a single MCP route meant to be used with local LLM agents.",
+  "main": "index.ts",
+  "scripts": {
+    "start": "ts-node src/index.ts",
+    "build": "tsc",
+    "serve": "node dist/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/javier-ruelas-igt/rag-mcp-prototype.git"
+  },
+  "keywords": [
+    "rag",
+    "mcp",
+    "prototype",
+    "ai"
+  ],
+  "author": "@javier-ruelas-igt",
+  "bugs": {
+    "url": "https://github.com/javier-ruelas-igt/rag-mcp-prototype/issues"
+  },
+  "homepage": "https://github.com/javier-ruelas-igt/rag-mcp-prototype#readme",
+  "devDependencies": {
+    "@biomejs/biome": "2.3.6",
+    "@types/express": "^5.0.5",
+    "@types/node": "^24.10.1",
+    "express": "^5.1.0",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.9.3"
+  },
+  "dependencies": {
+    "@langchain/core": "^1.0.6",
+    "langchain": "^1.0.6"
+  }
+}
