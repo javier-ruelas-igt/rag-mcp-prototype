@@ -2,7 +2,7 @@
   "name": "rag-mcp-prototype",
   "version": "1.0.0",
   "description": "Retrieval-Augmented Generation (RAG) prototype built using Node, Transformers.js and an in-memory vector store. Exposed through a single MCP route meant to be used with local LLM agents.",
-  "main": "index.ts",
+  "main": "src/index.ts",
   "scripts": {
     "start": "ts-node src/index.ts",
     "build": "tsc",
