@@ -23,7 +23,7 @@ const embedder = new Embedder();
 // 	documentsToProcess.forEach((doc) => {
 // 		const chunks = await splitter.split(doc);
 // 		chunks.forEach((chunk) => {
-// 			const embedding = await embedder.embed()
+// 			const embedding = await embedder.embed(chunk);
 // 			store.add(embedding);
 // 		})
 // 	})
